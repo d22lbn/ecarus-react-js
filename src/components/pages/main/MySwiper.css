@@ -1,0 +1,54 @@
+.swiper-slide-active {
+  margin-right: 40px !important;
+  margin-left: 0 !important;
+}
+
+.swiper {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  width: 100%;
+}
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  background-repeat: no-repeat;
+  background-size: 55%;
+  background-position: center;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  width: 38px !important;
+  height: 38px !important;
+  margin-top: 0 !important;
+  z-index: 100;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0) !important;
+  box-shadow: 0 4px 24px rgba(0, 11, 38, 0.12) !important;
+  transition: all 0.1s ease;
+}
+.swiper .swiper-button-prev:hover,
+.swiper .swiper-button-next:hover {
+  width: 42px !important;
+  height: 42px !important;
+}
+.swiper .swiper-button-prev:after,
+.swiper .swiper-button-next:after {
+  display: none;
+}
+.swiper .swiper-button-prev {
+  background-image: url("res/arrow-left.svg");
+  left: 0 !important;
+  transform: translate(calc(2vw - 50%), -50%) !important;
+}
+.swiper .swiper-button-next {
+  right: 0 !important;
+  transform: translate(calc(50% - 2vw), -50%) !important;
+  background-image: url("res/arrow-right.svg");
+}
+
+/*# sourceMappingURL=MySwiper.css.map */
