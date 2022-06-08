@@ -12,4 +12,21 @@ h1, h2, h3, h4, h5, h6, body {
 body {
   font-family: 'Inter', serif;
   font-weight: 400;
+  min-height: 100vh;
+}
+
+/*body::-webkit-scrollbar {*/
+/*  width: 0;*/
+/*}*/
+
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: absolute;
+  top: 0;
+  left: 0;
 }

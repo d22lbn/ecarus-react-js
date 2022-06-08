@@ -1,0 +1,49 @@
+$gray: rgba(0, 11, 38, 0.8);
+$gray-not-selected: rgba(0, 11, 38, 0.64);
+$black: rgba(0, 11, 38, 1);
+$green: rgba(7, 200, 142, 1);
+
+.main {
+  width: 100%;
+
+  .main__inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 25px auto 0 auto;
+
+    .information {
+      width: 768px;
+
+      .categories {
+        display: flex;
+
+        a {
+          margin-right: 24px;
+          text-decoration: none;
+          color: $gray-not-selected;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          padding-bottom: 4px;
+          margin-top: 7px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          &:hover {
+            color: $black;
+            border-bottom: 3px solid $green;
+            //padding-top: 3px;
+            margin-bottom: -3px;
+          }
+        }
+      }
+    }
+
+    .promocodies {
+      margin-top: 3px;
+    }
+  }
+}
