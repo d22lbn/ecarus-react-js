@@ -15,8 +15,8 @@ const App = () => {
                 balance={12000}
                 name={"Алексей"}
                 ava={ava}/>
-        {/*<Main/>*/}
-        <Lk/>
+        <Main/>
+        {/*<Lk/>*/}
       </div>
       <Footer/>
     </div>
