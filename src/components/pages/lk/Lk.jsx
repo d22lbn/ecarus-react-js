@@ -14,16 +14,19 @@ const Lk = () => {
             <a href="#">Промокоды</a>
             <a href="#">История</a>
           </div>
-          {/*<div className={style.promocodies}>*/}
-          {/*  <Promocode/>*/}
-          {/*  <Promocode/>*/}
-          {/*  <Promocode/>*/}
-          {/*  <Promocode/>*/}
-          {/*  <Promocode/>*/}
-          {/*</div>*/}
-          <div className={style.history}>
-            <History/>
+          <div className={style.promocodies}>
+            <Promocode/>
+            <Promocode/>
+            <Promocode/>
+            <Promocode/>
+            <Promocode/>
           </div>
+          {/*<div className={style.stories}>*/}
+          {/*  <div className={style.line}/>*/}
+          {/*  <History/>*/}
+          {/*  <History/>*/}
+          {/*  <History/>*/}
+          {/*</div>*/}
         </div>
       </div>
     </main>

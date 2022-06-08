@@ -1,5 +1,54 @@
 .history {
   width: 768px;
-  height: 158px;
-  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  height: 222px;
+  border: 1px solid rgba(62, 80, 114, 0.16);
+  border-radius: 20px;
+  margin-bottom: 16px;
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+
+  .information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+    height: 100%;
+    overflow: hidden;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(0, 11, 38, 0.88);
+      }
+
+      .first {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(0, 11, 38, 0.4);
+        margin-bottom: 4px;
+      }
+    }
+  }
+
+  .price {
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-left: 8px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      color: #000000;
+    }
+  }
 }
+
