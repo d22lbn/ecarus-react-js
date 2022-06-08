@@ -5,7 +5,6 @@
   display: flex;
   justify-content: space-between;
   overflow: hidden;
-  background: #B3EDC8;
 }
 .banner .banner__information {
   width: 50%;
@@ -14,6 +13,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: start;
 }
 .banner .banner__information h3 {
   font-weight: 700;
@@ -29,7 +29,7 @@
   margin-top: 16px;
 }
 .banner .banner__information button {
-  background: #07C88E;
+  background: #07c88e;
   border-radius: 8px;
   border: none;
   padding: 12px 24px;
@@ -37,21 +37,22 @@
   font-size: 16px;
   line-height: 24px;
   color: #FFFFFF;
-  width: 179px;
   cursor: pointer;
   transition: all 0.1s ease;
 }
 .banner .banner__information button:hover {
-  transform: scale(1.03);
+  background-color: #07c88e;
 }
 .banner .banner__img {
   width: 40%;
   overflow: hidden;
   border-radius: 24px;
-  margin-right: 64px;
 }
 .banner .banner__img img {
   height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 /*# sourceMappingURL=Banner.module.css.map */

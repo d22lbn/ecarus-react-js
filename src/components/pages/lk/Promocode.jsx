@@ -2,24 +2,24 @@ import React from "react";
 import style from "./Promocode.module.css"
 import card from "./res/card.png"
 
-const Promocode = () => {
+const Promocode = (props) => {
   return (
-    <div className={style.promocode}>
+    <div className={style.promocode} style={{"justify-content": (!props.isAuthorized ? "start" : "space-between")}}>
       <div className={style.card}>
-        <img src={card}/>
+        <img src={card} style={!props.isActive ? {filter: "grayscale(100%)"} : {filter: "none"}}/>
         <span>1000 ₽</span>
       </div>
       <div className={style.information}>
         <div className={style.item}>
           <span className={style.first}>Дата создания:</span>
-          <span>25.09.2021</span>
+          <span>{props.date}</span>
         </div>
         <div className={style.item}>
           <span className={style.first}>Ссылка на товар:</span>
-          <span className={style.link}>https://www.adidas.ru/tolstovka-future-icons-doubleknit/HA1417.html</span>
+          <span className={style.link}>{props.link}</span>
         </div>
       </div>
-      <button>Показать qr-код</button>
+      <button style={{"display": (!props.isActive ? "none" : "")}}>Показать qr-код</button>
     </div>
   );
 }

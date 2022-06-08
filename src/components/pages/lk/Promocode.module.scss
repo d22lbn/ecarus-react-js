@@ -4,7 +4,7 @@
   border-top: 1px solid rgba(0, 0, 0, 0.12);
 
   display: flex;
-  justify-content: space-between;
+  //justify-content: space-between;
   padding: 24px 0;
 
   .card {
@@ -79,5 +79,11 @@
     font-size: 14px;
     line-height: 20px;
     color: rgba(0, 11, 38, 0.8);
+    cursor: pointer;
+    transition: all 0.1s ease;
+
+    &:hover {
+      background-color: rgba(7, 200, 142, 1);
+    }
   }
 }

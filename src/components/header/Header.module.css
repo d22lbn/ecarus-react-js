@@ -55,5 +55,12 @@
   color: #000b26;
   font-weight: 600;
 }
+.header .header__inner .header__configuration .ava {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
 
 /*# sourceMappingURL=Header.module.css.map */

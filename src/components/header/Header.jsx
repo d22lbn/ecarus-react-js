@@ -3,9 +3,9 @@ import style from "./Header.module.css"
 import logo from "./res/logo.svg"
 import geo from "./res/geo.svg"
 import coin from "./res/coin.svg"
-import ava from "./res/ava.svg"
+import login from "./res/login.svg"
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header className={style.header}>
       <div className={style.header__inner}>
@@ -23,15 +23,15 @@ const Header = () => {
         <div className={style.header__configuration}>
           <div>
             <img src={geo} alt=""/>
-              <span>Казань</span>
+              <span>{props.geo}</span>
           </div>
-          <div className={style.balance}>
+          <div className={style.balance} style={{"display": (!props.isAuthorized ? "none" : "flex")}}>
             <img src={coin} alt=""/>
-              <span>1000</span>
+              <span>{props.balance}</span>
           </div>
           <div>
-            <img src={ava} alt=""/>
-              <span>Алексей</span>
+            <img className={style.ava} src={!props.isAuthorized ? login : props.ava} alt=""/>
+              <span>{!props.isAuthorized ? "Войти" : props.name}</span>
           </div>
         </div>
       </div>

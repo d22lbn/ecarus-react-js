@@ -3,20 +3,20 @@ import style from "./Block.module.css"
 import arrow from "./res/arrow-block.svg"
 import block1 from "./res/block1.png"
 
-const Block = () => {
+const Block = (props) => {
   return (
     <div className={style.block}>
       <div className={style.block__information}>
         <div>
-          <h3>Пункты сбора</h3>
-          <span>Посмотри, где в твоем городе можно сдать вторсырье на переработку</span>
+          <h3>{props.title}</h3>
+          <span>{props.subtitle}</span>
         </div>
         <button>
           <img src={arrow}/>
         </button>
       </div>
       <div className={style.block__img}>
-        <img src={block1}/>
+        <img src={props.img}/>
       </div>
     </div>
   );

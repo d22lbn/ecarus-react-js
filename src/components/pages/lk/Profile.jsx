@@ -1,16 +1,15 @@
 import React from "react";
 import style from "./Profile.module.css"
-import ava from "./res/ava.png"
 
-const Profile = () => {
+const Profile = (props) => {
   return (
     <div className={style.profile}>
       <div className={style.profile__ava}>
-        <img src={ava}/>
+        <img src={props.ava}/>
       </div>
-      <h3>Алексей Петрович</h3>
-      <span>+7 (917) 888 88 88</span>
-      <span>ivanov@gmail.com</span>
+      <h3>{props.name}</h3>
+      <span>{props.phone}</span>
+      <span>{props.email}</span>
       <button>Редактировать</button>
     </div>
   );
