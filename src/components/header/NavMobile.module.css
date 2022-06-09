@@ -7,7 +7,6 @@
   left: 0;
   z-index: 100;
   background-color: #FFFFFF;
-  height: calc(100vh - 160px);
 }
 .nav__mobile .nav__mobile__inner {
   width: 100%;
