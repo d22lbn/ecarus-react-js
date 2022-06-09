@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Block.module.css"
-import arrow from "./res/arrow-block.svg"
-import block1 from "./res/block1.png"
+import arrow from "../res/arrow-block.svg"
+import block1 from "../res/block1.png"
 
 const Block = (props) => {
   return (

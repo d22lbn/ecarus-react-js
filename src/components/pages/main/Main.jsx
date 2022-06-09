@@ -1,7 +1,7 @@
 import React from "react";
-import MySwiper from "./MySwiper";
+import MySwiper from "./myswiper/MySwiper";
 import style from "./Main.module.css"
-import Block from "./Block";
+import Block from "./block/Block";
 import banner1 from "./res/banner1.png";
 
 import block1 from "./res/block1.png"

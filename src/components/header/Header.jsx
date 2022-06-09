@@ -17,7 +17,7 @@ const Header = (props) => {
             <img src={logo} alt=""/>
           </div>
           <nav className={style.header__nav}>
-            <NavLink to={"/main"} className={setActive}>Главная</NavLink>
+            <NavLink to={"/"} className={setActive}>Главная</NavLink>
             <NavLink to={"/collection_points"} className={setActive}>Пункты сбора</NavLink>
             <NavLink to={"/eco_market"} className={setActive}>ЭкоМаркет</NavLink>
             <NavLink to={"/service"} className={setActive}>О сервисе</NavLink>

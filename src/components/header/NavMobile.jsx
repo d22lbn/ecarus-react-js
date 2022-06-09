@@ -30,7 +30,7 @@ const NavMobile = (props) => {
         </div>
 
         <div className={style.nav}>
-          <NavLink to={"/main"}>Главная</NavLink>
+          <NavLink to={"/"}>Главная</NavLink>
           <NavLink to={"/collection_points"}>Пункты сбора</NavLink>
           <NavLink to={"/eco_market"}>ЭкоМаркет</NavLink>
           <NavLink to={"/service"}>О сервисе</NavLink>

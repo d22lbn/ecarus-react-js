@@ -15,14 +15,13 @@ const App = () => {
         <div>
           <Header isAuthorized={true}
                   geo={"Казань"}
-                  balance={12000}
+                  balance={560000}
                   name={"Алексей"}
                   ava={ava}/>
-
           <Routes>
-            <Route path="/main" element={<Main/>}/>
-            <Route path="/nav_mobile" element={<NavMobile/>}/>
-            <Route path="/account" element={<Lk/>}/>
+            <Route path="/" element={<Main/>}/>
+            <Route path="/nav_mobile/*" element={<NavMobile/>}/>
+            <Route path="/account/*" element={<Lk/>}/>
           </Routes>
         </div>
         <Footer/>

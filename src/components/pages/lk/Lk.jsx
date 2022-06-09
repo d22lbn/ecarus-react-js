@@ -1,15 +1,26 @@
 import React from "react";
 import style from "./Lk.module.css"
-import Profile from "./Profile";
-import Promocode from "./Promocode";
-import History from "./History";
+import Profile from "./profile/Profile";
 import ava from "../../header/res/ava.jpg"
-import {BrowserRouter, NavLink, Route, Routes} from "react-router-dom";
-import Main from "../main/Main";
+import {NavLink} from "react-router-dom";
+import Promocodies from "./promocodies/Promocodies";
+import Stories from "./stories/Stories";
 
-let isPromocodies = true;
+// let isPromocodies = true;
+
 
 const Lk = () => {
+
+
+  let promocodies = [
+    {id: 1, isActive: true, price: 1000, date: "25.09.2021", link: "https://www.adidas.ru/tolstovka-future-icons-doubleknit/HA1417.html"},
+    {id: 2, isActive: true, price: 0, date: "25.09.2021", link: "https://www.adidas.ru/tolstovka-future-icons-doubleknit/HA1417.html"},
+    {id: 3, isActive: false, price: 5000, date: "25.09.2021", link: "https://www.adidas.ru/tolstovka-future-icons-doubleknit/HA1417.html"},
+    {id: 4, isActive: false, price: 1100, date: "25.09.2021", link: "https://www.adidas.ru/tolstovka-future-icons-doubleknit/HA1417.html"},
+    {id: 5, isActive: false, price: 700, date: "25.09.2021", link: "https://www.adidas.ru/tolstovka-future-icons-doubleknit/HA1417.html"},
+  ]
+
+
   return (
     <main className={style.main}>
       <h1>Личный кабинет</h1>
@@ -21,34 +32,22 @@ const Lk = () => {
         <div className={style.information}>
           <div className={style.categories}>
             <NavLink to="/account/promocodies">Промокоды</NavLink>
-            <a href="#">История</a>
+            <NavLink to="/account/stories">История</NavLink>
           </div>
 
-          <div className={style.promocodies} style={{display: !isPromocodies ? "none" : ""}}>
-            <Promocode isActive={true}
-                       price={1000}
-                       date={"25.09.2021"}
-                       link={"https://www.adidas.ru/tolstovka-future-icons-doubleknit/HA1417.html"}/>
-            <Promocode isActive={false}
-                       price={100}
-                       date={"25.09.2021"}
-                       link={"https://www.adidas.ru/tolstovka-future-icons-doubleknit/HA1417.html"}/>
-            <Promocode isActive={false}
-                       price={400}
-                       date={"25.09.2021"}
-                       link={"https://www.adidas.ru/tolstovka-future-icons-doubleknit/HA1417.html"}/>
-          </div>
-          <div className={style.stories} style={{display: isPromocodies ? "none" : ""}}>
-            <div className={style.line}/>
-            <History adress={"Казань, Кремлёвская, 88"}
-                     material={"Пластик, стекло, бумага"}
-                     date={"25.09.2021"}
-                     price={1000}/>
-            <History adress={"Казань, проспект Победы, 141"}
-                     material={"Пластик, стекло, бумага"}
-                     date={"25.09.2021"}
-                     price={900}/>
-          </div>
+          <Promocodies promocodies={promocodies}/>
+          {/*<Stories/>*/}
+
+
+
+          {/*<div className={style.promocodies} style={{display: !isPromocodies ? "none" : ""}}>*/}
+          {/*  */}
+          {/*</div>*/}
+          {/*<div className={style.stories} style={{display: isPromocodies ? "none" : ""}}>*/}
+          {/*  */}
+          {/*</div>*/}
+
+
         </div>
       </div>
     </main>

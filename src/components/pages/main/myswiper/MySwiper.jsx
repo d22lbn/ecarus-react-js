@@ -3,11 +3,11 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import {Navigation} from "swiper";
 import "./MySwiper.css"
-import Banner from "./Banner";
+import Banner from "./banner/Banner";
 
-import banner1 from "./res/banner1.png"
-import banner2 from "./res/banner2.png"
-import banner3 from "./res/banner3.png"
+import banner1 from "../res/banner1.png"
+import banner2 from "../res/banner2.png"
+import banner3 from "../res/banner3.png"
 
 const MySwiper = () => {
   return (
