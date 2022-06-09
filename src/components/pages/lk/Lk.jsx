@@ -10,6 +10,7 @@ let isPromocodies = true;
 const Lk = () => {
   return (
     <main className={style.main}>
+      <h1>Личный кабинет</h1>
       <div className={style.main__inner}>
         <Profile ava={ava}
                  name={"Алексей Мачихин"}

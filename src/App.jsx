@@ -16,8 +16,9 @@ const App = () => {
                 balance={12000}
                 name={"Алексей"}
                 ava={ava}/>
-        <Main/>
-        {/*<Lk/>*/}
+        {/*<Main/>*/}
+        {/*<NavMobile/>*/}
+        <Lk/>
       </div>
       <Footer/>
     </div>

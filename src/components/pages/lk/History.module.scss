@@ -1,3 +1,5 @@
+$mobile: 450px;
+
 .history {
   width: 768px;
   height: 222px;
@@ -9,6 +11,12 @@
   justify-content: space-between;
   align-items: start;
 
+  @media (max-width: $mobile) {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
   .information {
     display: flex;
     flex-direction: column;
@@ -17,9 +25,23 @@
     height: 100%;
     overflow: hidden;
 
+    @media (max-width: $mobile) {
+      height: 100%;
+      width: 100%;
+      overflow: visible;
+    }
+
     .item {
       display: flex;
       flex-direction: column;
+
+      @media (max-width: $mobile) {
+        margin-top: 16px;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
 
       span {
         font-weight: 400;
@@ -41,6 +63,10 @@
   .price {
     display: flex;
     align-items: center;
+
+    @media (max-width: $mobile) {
+      margin-top: 24px;
+    }
 
     span {
       margin-left: 8px;

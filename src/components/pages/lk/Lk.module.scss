@@ -1,10 +1,23 @@
-$gray: rgba(0, 11, 38, 0.8);
-$gray-not-selected: rgba(0, 11, 38, 0.64);
-$black: rgba(0, 11, 38, 1);
-$green: rgba(7, 200, 142, 1);
+$mobile: 450px;
 
 .main {
   width: 100%;
+
+  h1 {
+    max-width: 1200px;
+    margin: 25px auto 0 auto;
+    font-weight: 600;
+    font-size: 39px;
+    color: #000000;
+
+    @media (max-width: $mobile) {
+      width: auto;
+      display: inline-block;
+
+      margin-left: 16px;
+      font-size: 31px;
+    }
+  }
 
   .main__inner {
     display: flex;
@@ -12,8 +25,20 @@ $green: rgba(7, 200, 142, 1);
     max-width: 1200px;
     margin: 25px auto 0 auto;
 
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      width: 100%;
+      padding: 0 16px;
+    }
+
     .information {
       width: 768px;
+
+      @media (max-width: $mobile) {
+        width: 100%;
+        margin-top: 31px;
+      }
+
 
       .categories {
         display: flex;
@@ -21,20 +46,24 @@ $green: rgba(7, 200, 142, 1);
         a {
           margin-right: 24px;
           text-decoration: none;
-          color: $gray-not-selected;
+          color: rgba(0, 11, 38, 0.64);
           height: 100%;
           display: flex;
           align-items: center;
           padding-bottom: 4px;
           margin-top: 7px;
 
+          @media (max-width: $mobile) {
+            font-size: 19px;
+          }
+
           &:last-child {
             margin-right: 0;
           }
 
           &:hover {
-            color: $black;
-            border-bottom: 3px solid $green;
+            color: rgba(0, 11, 38, 1);
+            border-bottom: 3px solid rgba(7, 200, 142, 1);
             margin-bottom: -3px;
           }
         }
