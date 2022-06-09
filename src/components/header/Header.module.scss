@@ -56,7 +56,7 @@ $mobile: 450px;
           margin-right: 0;
         }
 
-        &:hover {
+        &.active__link {
           color: rgba(0, 11, 38, 1);
           border-bottom: 3px solid rgba(7, 200, 142, 1);;
           padding-top: 3px;

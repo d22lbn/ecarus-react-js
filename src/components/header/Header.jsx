@@ -4,8 +4,9 @@ import logo from "./res/logo.svg"
 import geo from "./res/geo.svg"
 import coin from "./res/coin.svg"
 import login from "./res/login.svg"
-import NavMobile from "./NavMobile";
 import {NavLink} from "react-router-dom";
+
+const setActive = ({isActive})=>isActive ? style.active__link : ' ';
 
 const Header = (props) => {
   return (
@@ -16,10 +17,10 @@ const Header = (props) => {
             <img src={logo} alt=""/>
           </div>
           <nav className={style.header__nav}>
-            <NavLink to={"/main"}>Главная</NavLink>
-            <NavLink to={"/collection_points"}>Пункты сбора</NavLink>
-            <NavLink to={"/eco_market"}>ЭкоМаркет</NavLink>
-            <NavLink to={"/service"}>О сервисе</NavLink>
+            <NavLink to={"/main"} className={setActive}>Главная</NavLink>
+            <NavLink to={"/collection_points"} className={setActive}>Пункты сбора</NavLink>
+            <NavLink to={"/eco_market"} className={setActive}>ЭкоМаркет</NavLink>
+            <NavLink to={"/service"} className={setActive}>О сервисе</NavLink>
           </nav>
         </div>
         <div className={style.header__configuration}>

@@ -4,6 +4,7 @@ import Profile from "./Profile";
 import Promocode from "./Promocode";
 import History from "./History";
 import ava from "../../header/res/ava.jpg"
+import {NavLink} from "react-router-dom";
 
 let isPromocodies = true;
 
@@ -18,7 +19,7 @@ const Lk = () => {
                  email={"d22lbn@gmail.com"}/>
         <div className={style.information}>
           <div className={style.categories}>
-            <a href="#">Промокоды</a>
+            <NavLink to="#">Промокоды</NavLink>
             <a href="#">История</a>
           </div>
           <div className={style.promocodies} style={{display: !isPromocodies ? "none" : ""}}>

@@ -52,7 +52,7 @@
 .header .header__inner .header__nav a:last-child {
   margin-right: 0;
 }
-.header .header__inner .header__nav a:hover {
+.header .header__inner .header__nav a.active__link {
   color: #000b26;
   border-bottom: 3px solid #07c88e;
   padding-top: 3px;
