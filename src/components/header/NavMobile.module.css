@@ -2,7 +2,12 @@
   width: 100%;
   font-size: 16px;
   padding: 39px 39px 32px 20px;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  z-index: 100;
   height: calc(100vh - 60px);
+  background-color: #FFFFFF;
 }
 .nav__mobile .nav__mobile__inner {
   width: 100%;

@@ -4,7 +4,8 @@ import Profile from "./Profile";
 import Promocode from "./Promocode";
 import History from "./History";
 import ava from "../../header/res/ava.jpg"
-import {NavLink} from "react-router-dom";
+import {BrowserRouter, NavLink, Route, Routes} from "react-router-dom";
+import Main from "../main/Main";
 
 let isPromocodies = true;
 
@@ -19,9 +20,10 @@ const Lk = () => {
                  email={"d22lbn@gmail.com"}/>
         <div className={style.information}>
           <div className={style.categories}>
-            <NavLink to="#">Промокоды</NavLink>
+            <NavLink to="/account/promocodies">Промокоды</NavLink>
             <a href="#">История</a>
           </div>
+
           <div className={style.promocodies} style={{display: !isPromocodies ? "none" : ""}}>
             <Promocode isActive={true}
                        price={1000}
