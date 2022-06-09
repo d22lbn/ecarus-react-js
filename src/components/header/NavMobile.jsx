@@ -16,9 +16,15 @@ const NavMobile = (props) => {
           </div>
           <div className={style.information}>
             <span>Алексей Мачихин</span>
-            <div className={style.balance}>
-              <img src={coin}/>
-              <span>1000</span>
+            <div className={style.information__data}>
+              <div className={style.balance}>
+                <img src={coin}/>
+                <span>1000</span>
+              </div>
+              <div className={style.geo}>
+                <img src={geo}/>
+                <span>Казань</span>
+              </div>
             </div>
           </div>
         </div>
@@ -29,12 +35,6 @@ const NavMobile = (props) => {
           <NavLink to={"/eco_market"}>ЭкоМаркет</NavLink>
           <NavLink to={"/service"}>О сервисе</NavLink>
         </div>
-
-        <div className={style.geo}>
-          <img src={geo}/>
-          <span>Казань</span>
-        </div>
-
       </div>
     </div>
   );

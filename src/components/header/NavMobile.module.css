@@ -6,15 +6,14 @@
   top: 61px;
   left: 0;
   z-index: 100;
-  height: calc(100vh - 61px);
   background-color: #FFFFFF;
+  height: calc(100vh - 160px);
 }
 .nav__mobile .nav__mobile__inner {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 .nav__mobile .nav__mobile__inner .account {
   width: 100%;
@@ -45,17 +44,33 @@
   line-height: 24px;
   color: #000000;
 }
-.nav__mobile .nav__mobile__inner .account .information .balance {
+.nav__mobile .nav__mobile__inner .account .information .information__data {
+  display: flex;
+}
+.nav__mobile .nav__mobile__inner .account .information .information__data .balance {
   display: flex;
   align-items: center;
   margin-top: 4px;
 }
-.nav__mobile .nav__mobile__inner .account .information .balance span {
+.nav__mobile .nav__mobile__inner .account .information .information__data .balance span {
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
   color: #000000;
   margin-left: 8px;
+}
+.nav__mobile .nav__mobile__inner .account .information .information__data .geo {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+  margin-left: 15px;
+}
+.nav__mobile .nav__mobile__inner .account .information .information__data .geo span {
+  margin-left: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 11, 38, 0.8);
 }
 .nav__mobile .nav__mobile__inner .nav {
   width: 100%;
@@ -73,20 +88,6 @@
 }
 .nav__mobile .nav__mobile__inner .nav a:last-child {
   margin: 0;
-}
-.nav__mobile .nav__mobile__inner .geo {
-  position: absolute;
-  bottom: 61px;
-  right: 0;
-  display: flex;
-  align-items: center;
-}
-.nav__mobile .nav__mobile__inner .geo span {
-  margin-left: 8px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: rgba(0, 11, 38, 0.8);
 }
 
 /*# sourceMappingURL=NavMobile.module.css.map */
