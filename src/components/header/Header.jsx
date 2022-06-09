@@ -21,18 +21,22 @@ const Header = (props) => {
           </nav>
         </div>
         <div className={style.header__configuration}>
-          <div>
+          <div className={style.geo}>
             <img src={geo} alt=""/>
-              <span>{props.geo}</span>
+            <span>{props.geo}</span>
           </div>
           <div className={style.balance} style={{"display": (!props.isAuthorized ? "none" : "flex")}}>
             <img src={coin} alt=""/>
-              <span>{props.balance}</span>
+            <span>{props.balance}</span>
           </div>
-          <div>
+          <div className={style.account}>
             <img className={style.ava} src={!props.isAuthorized ? login : props.ava} alt=""/>
-              <span>{!props.isAuthorized ? "Войти" : props.name}</span>
+            <span>{!props.isAuthorized ? "Войти" : props.name}</span>
           </div>
+
+          <button className={style.nav__mobile}>
+
+          </button>
         </div>
       </div>
     </header>

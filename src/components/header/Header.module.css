@@ -4,6 +4,11 @@
   box-shadow: 0 0.5px 0 rgba(0, 0, 0, 0.12);
   font-size: 14px;
 }
+@media (max-width: 412px) {
+  .header {
+    height: 50px;
+  }
+}
 .header .header__inner {
   height: 100%;
   max-width: 1200px;
@@ -11,6 +16,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 412px) {
+  .header .header__inner {
+    width: 100%;
+    padding: 24px 16px;
+  }
 }
 .header .header__inner div {
   display: flex;
@@ -24,6 +35,11 @@
   height: 100%;
   display: flex;
   align-items: center;
+}
+@media (max-width: 412px) {
+  .header .header__inner .header__nav {
+    display: none;
+  }
 }
 .header .header__inner .header__nav a {
   margin-right: 30px;
@@ -44,16 +60,31 @@
 .header .header__inner .header__configuration {
   color: rgba(0, 11, 38, 0.8);
 }
-.header .header__inner .header__configuration div {
+.header .header__inner .header__configuration div, .header .header__inner .header__configuration button {
   margin-left: 30px;
 }
-.header .header__inner .header__configuration div span {
+@media (max-width: 412px) {
+  .header .header__inner .header__configuration div, .header .header__inner .header__configuration button {
+    margin-left: 20px;
+  }
+}
+.header .header__inner .header__configuration div span, .header .header__inner .header__configuration button span {
   margin-left: 8px;
+}
+@media (max-width: 412px) {
+  .header .header__inner .header__configuration .geo {
+    display: none;
+  }
 }
 .header .header__inner .header__configuration .balance {
   margin-left: 48px;
   color: #000b26;
   font-weight: 600;
+}
+@media (max-width: 412px) {
+  .header .header__inner .header__configuration .account span {
+    display: none;
+  }
 }
 .header .header__inner .header__configuration .ava {
   width: 24px;
@@ -61,6 +92,16 @@
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
+}
+.header .header__inner .nav__mobile {
+  display: none;
+}
+@media (max-width: 412px) {
+  .header .header__inner .nav__mobile {
+    display: flex;
+    width: 19.5px;
+    height: 13.5px;
+  }
 }
 
 /*# sourceMappingURL=Header.module.css.map */

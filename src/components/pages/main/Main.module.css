@@ -5,9 +5,21 @@
   max-width: 1200px;
   margin: 25px auto 0 auto;
 }
+@media (max-width: 412px) {
+  .main .main__inner {
+    width: 100%;
+    margin: 0;
+  }
+}
 .main .main__inner .blocks {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 412px) {
+  .main .main__inner .blocks {
+    flex-direction: column;
+    padding: 0 16px;
+  }
 }
 
 /*# sourceMappingURL=Main.module.css.map */

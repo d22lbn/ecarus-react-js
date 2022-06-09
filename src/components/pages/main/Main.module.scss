@@ -5,9 +5,19 @@
     max-width: 1200px;
     margin: 25px auto 0 auto;
 
+    @media (max-width: 412px) {
+      width: 100%;
+      margin: 0;
+    }
+
     .blocks {
       display: flex;
       justify-content: space-between;
+
+      @media (max-width: 412px) {
+        flex-direction: column;
+        padding: 0 16px;
+      }
     }
   }
 }
