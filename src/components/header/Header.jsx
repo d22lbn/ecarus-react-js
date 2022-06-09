@@ -4,6 +4,7 @@ import logo from "./res/logo.svg"
 import geo from "./res/geo.svg"
 import coin from "./res/coin.svg"
 import login from "./res/login.svg"
+import NavMobile from "./NavMobile";
 
 const Header = (props) => {
   return (
@@ -34,9 +35,9 @@ const Header = (props) => {
             <span>{!props.isAuthorized ? "Войти" : props.name}</span>
           </div>
 
-          <button className={style.nav__mobile}>
-
-          </button>
+          <a href={NavMobile} className={style.nav__mobile}>
+            <span></span>
+          </a>
         </div>
       </div>
     </header>

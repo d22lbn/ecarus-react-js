@@ -5,6 +5,7 @@ import Main from "./components/pages/main/Main";
 import Lk from "./components/pages/lk/Lk";
 import Footer from "./components/footer/Footer";
 import ava from "../src/components/header/res/ava.jpg"
+import NavMobile from "./components/header/NavMobile";
 
 const App = () => {
   return (
