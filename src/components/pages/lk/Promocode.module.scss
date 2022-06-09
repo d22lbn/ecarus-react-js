@@ -10,17 +10,24 @@ $mobile: 450px;
 
   @media (max-width: $mobile) {
     flex-direction: column;
-    //overflow: hidden;
     width: 100%;
     height: auto;
   }
 
   .card {
-    width: 100%;
+    height: 100%;
     position: relative;
 
-    img {
+    @media (max-width: $mobile) {
       width: 100%;
+    }
+
+    img {
+      height: 100%;
+
+      @media (max-width: $mobile) {
+        width: 100%;
+      }
     }
 
     span {
@@ -33,6 +40,10 @@ $mobile: 450px;
       font-weight: 700;
       font-size: 32px;
       color: #FFFFFF;
+
+      @media (max-width: $mobile) {
+        font-size: 42px;
+      }
     }
   }
 

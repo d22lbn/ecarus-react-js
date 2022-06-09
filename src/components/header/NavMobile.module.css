@@ -18,9 +18,14 @@
 }
 .nav__mobile .nav__mobile__inner .account .ava {
   height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
 }
 .nav__mobile .nav__mobile__inner .account .ava img {
   height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .nav__mobile .nav__mobile__inner .account .information {
   display: flex;

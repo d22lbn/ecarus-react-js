@@ -68,8 +68,9 @@ $mobile: 450px;
       color: rgba(0, 11, 38, 0.8);
       height: 100%;
 
-      div, a {
-        margin-left: 30px;
+      div {
+        margin-left: 24px;
+
         @media (max-width: $mobile) {
           margin-left: 20px;
         }
@@ -80,6 +81,15 @@ $mobile: 450px;
       }
 
       .geo {
+        margin-right: 24px;
+
+        a {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          color: rgba(0, 11, 38, 0.8);
+        }
+
         @media (max-width: $mobile) {
           display: none;
           width: 0;
@@ -87,7 +97,6 @@ $mobile: 450px;
       }
 
       .balance {
-        margin-left: 48px;
         color: rgba(0, 11, 38, 1);
         font-weight: 600;
 
@@ -97,6 +106,13 @@ $mobile: 450px;
       }
 
       .account {
+        a {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          color: rgba(0, 11, 38, 0.8);
+        }
+
         @media (max-width: $mobile) {
           span {
             display: none;

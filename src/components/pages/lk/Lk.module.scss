@@ -5,9 +5,9 @@ $mobile: 450px;
 
   h1 {
     max-width: 1200px;
-    margin: 25px auto 0 auto;
+    margin: 20px auto 0 auto;
     font-weight: 600;
-    font-size: 39px;
+    font-size: 38px;
     color: #000000;
 
     @media (max-width: $mobile) {
@@ -23,7 +23,7 @@ $mobile: 450px;
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
-    margin: 25px auto 0 auto;
+    margin: 20px auto 0 auto;
 
     @media (max-width: $mobile) {
       flex-direction: column;

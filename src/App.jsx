@@ -6,22 +6,34 @@ import Lk from "./components/pages/lk/Lk";
 import Footer from "./components/footer/Footer";
 import ava from "../src/components/header/res/ava.jpg"
 import NavMobile from "./components/header/NavMobile";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 const App = () => {
   return (
-    <div className="wrapper">
-      <div>
-        <Header isAuthorized={true}
-                geo={"Казань"}
-                balance={12000}
-                name={"Алексей"}
-                ava={ava}/>
-        {/*<Main/>*/}
-        {/*<NavMobile/>*/}
-        <Lk/>
+    <BrowserRouter>
+      <div className="wrapper">
+        <div>
+          <Header isAuthorized={true}
+                  geo={"Казань"}
+                  balance={12000}
+                  name={"Алексей"}
+                  ava={ava}/>
+
+
+          <Routes>
+            <Route path="/main" element={<Main/>}/>
+            <Route path="/nav_mobile" element={<NavMobile/>}/>
+            <Route path="/account" element={<Lk/>}/>
+          </Routes>
+
+
+          {/*<Main/>*/}
+          {/*<NavMobile/>*/}
+          {/*<Lk/>*/}
+        </div>
+        <Footer/>
       </div>
-      <Footer/>
-    </div>
+    </BrowserRouter>
   );
 }
 

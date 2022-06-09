@@ -21,9 +21,14 @@ $mobile: 450px;
 
       .ava {
         height: 100%;
+        border-radius: 50%;
+        overflow: hidden;
 
         img {
           height: 100%;
+          width: 100%;
+          object-fit: cover;
+          object-position: center;
         }
       }
 

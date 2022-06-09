@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./NavMobile.module.css"
 import geo from "./res/geo.svg"
-import ava from "./res/ava.svg";
+import ava from "./res/ava.jpg";
 import coin from "./res/coin.svg";
 
 const NavMobile = (props) => {
@@ -23,10 +23,10 @@ const NavMobile = (props) => {
         </div>
 
         <div className={style.nav}>
-          <a href="#">Главная</a>
-          <a href="#">Пункты сбора</a>
-          <a href="#">ЭкоМаркет</a>
-          <a href="#">О сервисе</a>
+          <a href={"/main"}>Главная</a>
+          <a href={"/collection_points"}>Пункты сбора</a>
+          <a href={"/eco_market"}>ЭкоМаркет</a>
+          <a href={"/service"}>О сервисе</a>
         </div>
 
         <div className={style.geo}>

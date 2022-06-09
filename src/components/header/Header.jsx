@@ -15,29 +15,34 @@ const Header = (props) => {
             <img src={logo} alt=""/>
           </div>
           <nav className={style.header__nav}>
-            <a href="#">Главная</a>
-            <a href="#">Пункты сбора</a>
-            <a href="#">ЭкоМаркет</a>
-            <a href="#">О сервисе</a>
+            <a href={"/main"}>Главная</a>
+            <a href={"/collection_points"}>Пункты сбора</a>
+            <a href={"/eco_market"}>ЭкоМаркет</a>
+            <a href={"/service"}>О сервисе</a>
           </nav>
         </div>
         <div className={style.header__configuration}>
           <div className={style.geo}>
-            <img src={geo} alt=""/>
-            <span>{props.geo}</span>
+            <a href={"#"}>
+              <img src={geo} alt=""/>
+              <span>{props.geo}</span>
+            </a>
           </div>
           <div className={style.balance} style={{"display": (!props.isAuthorized ? "none" : "flex")}}>
             <img src={coin} alt=""/>
             <span>{props.balance}</span>
           </div>
           <div className={style.account}>
-            <img className={style.ava} src={!props.isAuthorized ? login : props.ava} alt=""/>
-            <span>{!props.isAuthorized ? "Войти" : props.name}</span>
+            <a href={"/account"}>
+              <img className={style.ava} src={!props.isAuthorized ? login : props.ava} alt=""/>
+              <span>{!props.isAuthorized ? "Войти" : props.name}</span>
+            </a>
           </div>
-
-          <a href={NavMobile} className={style.nav__mobile}>
-            <span></span>
-          </a>
+          <div className={style.nav__mobile}>
+            <a href={"/nav_mobile"}>
+              <span/>
+            </a>
+          </div>
         </div>
       </div>
     </header>
