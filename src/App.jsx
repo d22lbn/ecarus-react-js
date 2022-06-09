@@ -19,17 +19,11 @@ const App = () => {
                   name={"Алексей"}
                   ava={ava}/>
 
-
           <Routes>
             <Route path="/main" element={<Main/>}/>
             <Route path="/nav_mobile" element={<NavMobile/>}/>
             <Route path="/account" element={<Lk/>}/>
           </Routes>
-
-
-          {/*<Main/>*/}
-          {/*<NavMobile/>*/}
-          {/*<Lk/>*/}
         </div>
         <Footer/>
       </div>

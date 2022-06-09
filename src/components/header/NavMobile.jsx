@@ -3,6 +3,7 @@ import style from "./NavMobile.module.css"
 import geo from "./res/geo.svg"
 import ava from "./res/ava.jpg";
 import coin from "./res/coin.svg";
+import {NavLink} from "react-router-dom";
 
 const NavMobile = (props) => {
   return (
@@ -23,10 +24,10 @@ const NavMobile = (props) => {
         </div>
 
         <div className={style.nav}>
-          <a href={"/main"}>Главная</a>
-          <a href={"/collection_points"}>Пункты сбора</a>
-          <a href={"/eco_market"}>ЭкоМаркет</a>
-          <a href={"/service"}>О сервисе</a>
+          <NavLink to={"/main"}>Главная</NavLink>
+          <NavLink to={"/collection_points"}>Пункты сбора</NavLink>
+          <NavLink to={"/eco_market"}>ЭкоМаркет</NavLink>
+          <NavLink to={"/service"}>О сервисе</NavLink>
         </div>
 
         <div className={style.geo}>
