@@ -7,22 +7,26 @@ import Footer from "./components/footer/Footer";
 import ava from "../src/components/header/res/ava.jpg"
 import NavMobile from "./components/header/NavMobile";
 import {Route, Routes} from "react-router-dom";
+import LogIn from "./components/authorization/LogIn";
 
 const App = (props) => {
   return (
     <div className="wrapper">
       <div>
+        {/*<LogIn title={'Вход'} it1={'Телефон'} it2={'Пароль'}/>*/}
         <Header isAuthorized={true}
                 geo={"Казань"}
                 balance={560000}
                 name={"Алексей"}
                 ava={ava}/>
-        <Routes>
-          <Route path="/" element={<Main/>}/>
-          <Route path="/nav_mobile/*" element={<NavMobile/>}/>
-          <Route path="/account/*"
-                 element={<Lk state={props.state.lkPage}/>}/>
-        </Routes>
+        <div className="body__main">
+          <Routes>
+            <Route path="/" element={<Main/>}/>
+            <Route path="/nav_mobile/*" element={<NavMobile/>}/>
+            <Route path="/account/*"
+                   element={<Lk state={props.state.lkPage}/>}/>
+          </Routes>
+        </div>
       </div>
       <Footer/>
     </div>

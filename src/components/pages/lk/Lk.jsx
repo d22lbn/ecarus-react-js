@@ -8,17 +8,17 @@ import Stories from "./stories/Stories";
 
 // let isPromocodies = true;
 
-
 const Lk = (props) => {
 
-  let isShowPromocodies = true;
+  let promocodies = React.createRef();
+  let stories = React.createRef();
 
   let showPromocodies = () => {
-    isShowPromocodies = true
+    promocodies.current.display = 'none'
   }
 
   let showStories = () => {
-    isShowPromocodies = false
+    promocodies.current.display = 'none'
   }
 
   return (
@@ -36,9 +36,8 @@ const Lk = (props) => {
           </div>
 
 
-          {isShowPromocodies ?
-            <Promocodies promocodies={props.state.promocodies}/> :
-            <Stories stories={props.state.stories}/>}
+          <Promocodies promocodies={props.state.promocodies} ref={promocodies}/>
+          <Stories stories={props.state.stories} ref={stories}/>
 
 
           {/*<div className={style.promocodies} style={{display: !isPromocodies ? "none" : ""}}>*/}
