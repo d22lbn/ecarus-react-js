@@ -9,17 +9,17 @@ import Stories from "./stories/Stories";
 // let isPromocodies = true;
 
 
-const Lk = () => {
+const Lk = (props) => {
 
+  let isShowPromocodies = true;
 
-  let promocodies = [
-    {id: 1, isActive: true, price: 1000, date: "25.09.2021", link: "https://www.adidas.ru/tolstovka-future-icons-doubleknit/HA1417.html"},
-    {id: 2, isActive: true, price: 0, date: "25.09.2021", link: "https://www.adidas.ru/tolstovka-future-icons-doubleknit/HA1417.html"},
-    {id: 3, isActive: false, price: 5000, date: "25.09.2021", link: "https://www.adidas.ru/tolstovka-future-icons-doubleknit/HA1417.html"},
-    {id: 4, isActive: false, price: 1100, date: "25.09.2021", link: "https://www.adidas.ru/tolstovka-future-icons-doubleknit/HA1417.html"},
-    {id: 5, isActive: false, price: 700, date: "25.09.2021", link: "https://www.adidas.ru/tolstovka-future-icons-doubleknit/HA1417.html"},
-  ]
+  let showPromocodies = () => {
+    isShowPromocodies = true
+  }
 
+  let showStories = () => {
+    isShowPromocodies = false
+  }
 
   return (
     <main className={style.main}>
@@ -31,13 +31,14 @@ const Lk = () => {
                  email={"d22lbn@gmail.com"}/>
         <div className={style.information}>
           <div className={style.categories}>
-            <NavLink to="/account/promocodies">Промокоды</NavLink>
-            <NavLink to="/account/stories">История</NavLink>
+            <NavLink onClick={showPromocodies} to="/account/promocodies">Промокоды</NavLink>
+            <NavLink onClick={showStories} to="/account/stories">История</NavLink>
           </div>
 
-          <Promocodies promocodies={promocodies}/>
-          {/*<Stories/>*/}
 
+          {isShowPromocodies ?
+            <Promocodies promocodies={props.state.promocodies}/> :
+            <Stories stories={props.state.stories}/>}
 
 
           {/*<div className={style.promocodies} style={{display: !isPromocodies ? "none" : ""}}>*/}

@@ -7,9 +7,10 @@ import banner1 from "./res/banner1.png";
 import block1 from "./res/block1.png"
 import block2 from "./res/block2.png"
 
-const Main = () => {
+const Main = (props) => {
   return (
     <main className={style.main}>
+      <h1>{props.lol}</h1>
       <div className={style.main__inner}>
         <MySwiper/>
         <div className={style.blocks}>

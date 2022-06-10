@@ -8,6 +8,10 @@ $mobile: 450px;
   display: flex;
   padding: 24px 0;
 
+  &:first-child {
+    margin-top: 3px;
+  }
+
   @media (max-width: $mobile) {
     flex-direction: column;
     width: 100%;

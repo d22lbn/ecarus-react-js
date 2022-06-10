@@ -5,6 +5,9 @@
   display: flex;
   padding: 24px 0;
 }
+.promocode:first-child {
+  margin-top: 3px;
+}
 @media (max-width: 450px) {
   .promocode {
     flex-direction: column;
