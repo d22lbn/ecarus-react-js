@@ -1,7 +1,6 @@
 import React from "react";
 import style from "./Lk.module.css"
 import Profile from "./profile/Profile";
-import ava from "../../header/res/ava.jpg"
 import {NavLink} from "react-router-dom";
 import Promocodies from "./promocodies/Promocodies";
 import Stories from "./stories/Stories";
@@ -25,10 +24,10 @@ const Lk = (props) => {
     <main className={style.main}>
       <h1>Личный кабинет</h1>
       <div className={style.main__inner}>
-        <Profile ava={ava}
-                 name={"Алексей Мачихин"}
-                 phone={"+79274351254"}
-                 email={"d22lbn@gmail.com"}/>
+        <Profile ava={props.userData.ava}
+                 name={props.userData.name + ' ' + props.userData.surname}
+                 phone={props.userData.phone}
+                 email={props.userData.email}/>
         <div className={style.information}>
           <div className={style.categories}>
             <NavLink onClick={showPromocodies} to="/account/promocodies">Промокоды</NavLink>

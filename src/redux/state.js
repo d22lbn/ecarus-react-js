@@ -1,4 +1,15 @@
+import ava from "./ava.jpg"
+
 let state = {
+  userData: {
+    name: 'Алексей',
+    surname: 'Мачихин',
+    balance: 2400000,
+    phone: '+79274351254',
+    email: 'd22lbn@gmail.com',
+    city: 'Тамбов',
+    ava: ava
+  },
   lkPage: {
     promocodies: [
       {

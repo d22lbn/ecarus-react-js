@@ -1,7 +1,6 @@
 import React from "react";
 import style from "./NavMobile.module.css"
 import geo from "./res/geo.svg"
-import ava from "./res/ava.jpg";
 import coin from "./res/coin.svg";
 import {NavLink} from "react-router-dom";
 
@@ -12,18 +11,18 @@ const NavMobile = (props) => {
 
         <div className={style.account}>
           <div className={style.ava}>
-            <img src={ava}/>
+            <img src={props.userData.ava}/>
           </div>
           <div className={style.information}>
-            <span>Алексей Мачихин</span>
+            <span>{props.userData.name} {props.userData.surname}</span>
             <div className={style.information__data}>
               <div className={style.balance}>
                 <img src={coin}/>
-                <span>1000</span>
+                <span>{props.userData.balance}</span>
               </div>
               <div className={style.geo}>
                 <img src={geo}/>
-                <span>Казань</span>
+                <span>{props.userData.city}</span>
               </div>
             </div>
           </div>

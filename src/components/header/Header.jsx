@@ -27,17 +27,17 @@ const Header = (props) => {
           <div className={style.geo}>
             <NavLink to={"#"}>
               <img src={geo} alt=""/>
-              <span>{props.geo}</span>
+              <span>{props.userData.city}</span>
             </NavLink>
           </div>
           <div className={style.balance} style={{"display": (!props.isAuthorized ? "none" : "flex")}}>
             <img src={coin} alt=""/>
-            <span>{props.balance}</span>
+            <span>{props.userData.balance}</span>
           </div>
           <div className={style.account}>
             <NavLink to={"/account"}>
-              <img className={style.ava} src={!props.isAuthorized ? login : props.ava} alt=""/>
-              <span>{!props.isAuthorized ? "Войти" : props.name}</span>
+              <img className={style.ava} src={!props.isAuthorized ? login : props.userData.ava} alt=""/>
+              <span>{!props.isAuthorized ? "Войти" : props.userData.name}</span>
             </NavLink>
           </div>
           <div className={style.nav__mobile}>
