@@ -10,6 +10,7 @@ import {Route, Routes} from "react-router-dom";
 import LogIn from "./components/authorization/LogIn";
 import EcoMarket from "./components/pages/ecomarket/EcoMarket";
 import CollectionPoints from "./components/pages/collection_points/CollectionPoints";
+import Service from "./components/pages/service/Service";
 
 const App = (props) => {
   return (
@@ -29,6 +30,7 @@ const App = (props) => {
                    element={<Lk state={props.state.lkPage}/>}/>
             <Route path={"/eco_market"} element={<EcoMarket/>}/>
             <Route path={"/collection_points"} element={<CollectionPoints/>}/>
+            <Route path={"/service"} element={<Service/>}/>
           </Routes>
         </div>
       </div>

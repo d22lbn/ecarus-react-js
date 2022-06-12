@@ -1,0 +1,24 @@
+$mobile: 450px;
+
+.service {
+
+  .service_inner {
+    max-width: 1200px;
+    margin: 25px auto 0 auto;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      padding: 16px 16px 0 16px;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-weight: 500;
+      font-size: 30px;
+
+      &:first-child {
+        margin: 0;
+      }
+    }
+  }
+}
