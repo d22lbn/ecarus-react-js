@@ -49,13 +49,13 @@ $mobile: 450px;
   }
 
   .swiper-button-prev {
-    background-image: url("../res/arrow-left.svg");
+    background-image: url("../../../../redux/arrow_left.svg"); //todo как-то переделать
     left: 0 !important;
     transform: translate(calc(2vw - 50%), -50%) !important;
   }
   .swiper-button-next {
     right: 0 !important;
     transform: translate(calc(50% - 2vw), -50%) !important;
-    background-image: url("../res/arrow-right.svg");
+    background-image: url("../../../../redux/arrow_right.svg"); //todo как-то переделать
   }
 }

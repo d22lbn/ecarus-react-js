@@ -1,19 +1,23 @@
 import React from "react";
 import style from "./EcoMarket.module.css"
-import Product from "./Product";
-import it1 from "./res/it1.png"
-import it2 from "./res/it2.png"
-import it3 from "./res/it3.png"
-import it4 from "./res/it4.png"
-import it5 from "./res/it5.png"
+import Product from "./product/Product";
 
+const EcoMarket = (props) => {
 
-const EcoMarket = () => {
+  let products = props.state.products
+    .map((product) =>
+      <Product img={product.img}
+               brand={product.brand}
+               name={product.name}
+               description={product.description}
+               price={product.price}
+               icons={props.icons}
+      />);
+
   return (
     <main className={style.ecomarket}>
       <h1>ЭкоМаркет</h1>
       <div className={style.ecomarket__inner}>
-
 
         <button className={style.filters__btn}>Фильтры</button>
         <div className={style.ecomarket__filter}>
@@ -80,11 +84,7 @@ const EcoMarket = () => {
         </div>
 
         <div className={style.products}>
-          <Product img={it1} brand={'nike'} name={'Nike Air Max 2021'} description={'Мужская обувь'} price={1000}/>
-          <Product img={it2} brand={'nike'} name={'Nike Air Max 90 Premium'} description={'Мужская обувь'} price={750}/>
-          <Product img={it3} brand={'Adidas'} name={'Adidas Alphabounce RC'} description={'Мужская обувь'} price={1200}/>
-          <Product img={it4} brand={'H&M'} name={'Худи H&M'} description={'Мужская одежда'} price={1000}/>
-          <Product img={it5} brand={'nike'} name={'Nike Air Force 1 Low'} description={'Мужская обувь'} price={2100}/>
+          {products}
         </div>
       </div>
     </main>

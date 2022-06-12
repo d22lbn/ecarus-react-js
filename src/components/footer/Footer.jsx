@@ -1,23 +1,21 @@
 import React from "react";
 import style from "./Footer.module.css"
-import mail from "./res/mail.svg"
-import phone from "./res/phone.svg"
 
-const Header = () => {
+const Footer = (props) => {
   return (
     <footer className={style.footer}>
       <div className={style.footer__inner}>
         <div className={style.footer__information}>
-          <img src={mail}/>
-          <span>info@ecorus.ru</span>
+          <img src={props.icons.email}/>
+          <span>{props.state.email}</span>
         </div>
         <div className={style.footer__information}>
-          <img src={phone}/>
-          <span>+7 (800) 880-88-88</span>
+          <img src={props.icons.phone}/>
+          <span>{props.state.phone}</span>
         </div>
       </div>
     </footer>
   );
 }
 
-export default Header;
+export default Footer;

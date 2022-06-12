@@ -7,7 +7,7 @@ const Stories = (props) => {
   let storiesElements = props.stories
     .map((history) =>
       <History id={history.id} adress={history.address} material={history.material} date={history.date}
-               price={history.price}/>);
+               price={history.price} icons={props.icons}/>);
 
   return (
     <div>

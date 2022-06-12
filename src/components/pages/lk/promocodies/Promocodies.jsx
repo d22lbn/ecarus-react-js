@@ -5,7 +5,7 @@ const Promocodies = (props) => {
   let promocodiesElements = props.promocodies
     .map((promocode) =>
       <Promocode id={promocode.id} isActive={promocode.isActive} price={promocode.price} date={promocode.date}
-                 link={promocode.link}/>);
+                 link={promocode.link} icons={props.icons}/>);
 
   return (
     <div>

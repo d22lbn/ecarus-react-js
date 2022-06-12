@@ -1,27 +1,23 @@
 import React from "react";
-import MySwiper from "./myswiper/MySwiper";
 import style from "./Main.module.css"
+import MySwiper from "./myswiper/MySwiper";
 import Block from "./block/Block";
-import banner1 from "./res/banner1.png";
-
-import block1 from "./res/block1.png"
-import block2 from "./res/block2.png"
 
 const Main = (props) => {
+  let blocks = props.state.blocks
+    .map((block) =>
+      <Block title={block.title}
+             subtitle={block.subtitle}
+             img={block.img}
+             icons={props.icons}
+      />);
+
   return (
     <main className={style.main}>
-      <h1>{props.lol}</h1>
       <div className={style.main__inner}>
-        <MySwiper/>
+        <MySwiper banners={props.state.banners} icons={props.icons}/>
         <div className={style.blocks}>
-          <Block title={"Пункты сбора"}
-                 subtitle={"Посмотри, где в твоем городе можно сдать вторсырье на переработку"}
-                 img={block1}
-          />
-          <Block title={"ЭкоМаркет"}
-                 subtitle={"Используй заработанные экокоины для покупки товаров из переработанных материалов "}
-                 img={block2}
-          />
+          {blocks}
         </div>
       </div>
     </main>

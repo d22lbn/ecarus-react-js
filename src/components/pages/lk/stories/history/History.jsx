@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./History.module.css"
-import coin from "../../res/coin.svg"
 
 const History = (props) => {
   return (
@@ -20,7 +19,7 @@ const History = (props) => {
         </div>
       </div>
       <div className={style.price}>
-        <img src={coin}/>
+        <img src={props.icons.coin}/>
         <span>{props.price}</span>
       </div>
     </div>

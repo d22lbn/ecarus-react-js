@@ -1,9 +1,9 @@
 import React from "react";
 import style from "./Lk.module.css"
 import Profile from "./profile/Profile";
-import {NavLink} from "react-router-dom";
 import Promocodies from "./promocodies/Promocodies";
 import Stories from "./stories/Stories";
+import {NavLink} from "react-router-dom";
 
 // let isPromocodies = true;
 
@@ -35,8 +35,8 @@ const Lk = (props) => {
           </div>
 
 
-          <Promocodies promocodies={props.state.promocodies} ref={promocodies}/>
-          <Stories stories={props.state.stories} ref={stories}/>
+          <Promocodies promocodies={props.state.promocodies} icons={props.icons} ref={promocodies}/>
+          <Stories stories={props.state.stories} icons={props.icons} ref={stories}/>
 
 
           {/*<div className={style.promocodies} style={{display: !isPromocodies ? "none" : ""}}>*/}

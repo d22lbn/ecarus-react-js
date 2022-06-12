@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./Product.module.css"
-import coin from "../lk/res/coin.svg";
 
 
 const Product = (props) => {
@@ -13,7 +12,7 @@ const Product = (props) => {
       <span className={style.product__name}>{props.name}</span>
       <span className={style.product__description}>{props.description}</span>
       <div className={style.product__price}>
-        <img src={coin}/>
+        <img src={props.icons.coin}/>
         <span>{props.price}</span>
       </div>
     </div>
