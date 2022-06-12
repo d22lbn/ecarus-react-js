@@ -1,0 +1,131 @@
+.ecomarket {
+  width: 100%;
+}
+.ecomarket h1 {
+  max-width: 1200px;
+  margin: 20px auto 0 auto;
+  font-weight: 600;
+  font-size: 38px;
+  color: #000000;
+}
+@media (max-width: 450px) {
+  .ecomarket h1 {
+    width: auto;
+    display: inline-block;
+    margin-left: 16px;
+    font-size: 31px;
+  }
+}
+.ecomarket .ecomarket__inner {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto 0 auto;
+  justify-content: space-between;
+}
+@media (max-width: 450px) {
+  .ecomarket .ecomarket__inner {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 16px;
+  }
+}
+.ecomarket .ecomarket__inner .filters__btn {
+  display: none;
+}
+@media (max-width: 450px) {
+  .ecomarket .ecomarket__inner .filters__btn {
+    display: block;
+    width: 100%;
+    padding: 12px 24px;
+    background: rgba(62, 80, 114, 0.08);
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    color: rgba(0, 11, 38, 0.8);
+  }
+}
+.ecomarket .ecomarket__inner .ecomarket__filter {
+  width: 282px;
+  margin-bottom: 30px;
+}
+@media (max-width: 450px) {
+  .ecomarket .ecomarket__inner .ecomarket__filter {
+    display: none;
+  }
+}
+.ecomarket .ecomarket__inner .ecomarket__filter .ecomarket__filter__categories {
+  width: 100%;
+  padding: 24px;
+  background: #FFFFFF;
+  border: 1px solid rgba(62, 80, 114, 0.16);
+  border-radius: 16px;
+}
+.ecomarket .ecomarket__inner .ecomarket__filter .ecomarket__filter__categories .filter__item {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.ecomarket .ecomarket__inner .ecomarket__filter .ecomarket__filter__categories .filter__item:first-child {
+  margin-top: 0;
+}
+.ecomarket .ecomarket__inner .ecomarket__filter .ecomarket__filter__categories .filter__item .filter__item__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 11, 38, 0.8);
+}
+.ecomarket .ecomarket__inner .ecomarket__filter .ecomarket__filter__categories .filter__item .filter__item__choice {
+  margin-top: 16px;
+}
+.ecomarket .ecomarket__inner .ecomarket__filter .ecomarket__filter__categories .filter__item .filter__item__choice div {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+.ecomarket .ecomarket__inner .ecomarket__filter .ecomarket__filter__categories .filter__item .filter__item__choice div:first-child {
+  margin-top: 0;
+}
+.ecomarket .ecomarket__inner .ecomarket__filter .ecomarket__filter__categories .filter__item .filter__item__choice div input {
+  margin: 0;
+}
+.ecomarket .ecomarket__inner .ecomarket__filter .ecomarket__filter__categories .filter__item .filter__item__choice div span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(0, 11, 38, 0.72);
+  margin-left: 8px;
+}
+.ecomarket .ecomarket__inner .ecomarket__filter button {
+  padding: 12px 24px;
+  height: 48px;
+  background: rgba(62, 80, 114, 0.08);
+  border-radius: 8px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+  color: rgba(0, 11, 38, 0.8);
+  border: none;
+  margin-top: 23px;
+}
+@media (max-width: 450px) {
+  .ecomarket .ecomarket__inner .ecomarket__filter button {
+    display: none;
+  }
+}
+.ecomarket .ecomarket__inner .products {
+  width: 895px;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 450px) {
+  .ecomarket .ecomarket__inner .products {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=EcoMarket.module.css.map */

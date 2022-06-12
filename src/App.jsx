@@ -8,6 +8,7 @@ import ava from "../src/components/header/res/ava.jpg"
 import NavMobile from "./components/header/NavMobile";
 import {Route, Routes} from "react-router-dom";
 import LogIn from "./components/authorization/LogIn";
+import EcoMarket from "./components/pages/ecomarket/EcoMarket";
 
 const App = (props) => {
   return (
@@ -25,6 +26,7 @@ const App = (props) => {
             <Route path="/nav_mobile/*" element={<NavMobile/>}/>
             <Route path="/account/*"
                    element={<Lk state={props.state.lkPage}/>}/>
+            <Route path={"/eco_market"} element={<EcoMarket/>}/>
           </Routes>
         </div>
       </div>

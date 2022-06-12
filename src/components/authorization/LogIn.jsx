@@ -13,12 +13,7 @@ const LogIn = () => {
           </div>
           <input placeholder={'Телефон'}/>
           <input placeholder={'Пароль'}/>
-          <button className={style.main__btn}>Войти</button>
-          <div className={style.login__add}>
-            <NavLink to={''}>Войти с помощью смс</NavLink>
-            <NavLink to={''}>Регистрация</NavLink>
-          </div>
-          <button className={style.sec_btn}>Вход для партнёров</button>
+          <button>Войти</button>
         </div>
       </div>
     </div>
