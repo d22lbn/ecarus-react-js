@@ -1,107 +1,112 @@
 $mobile: 450px;
 
 .nav__mobile {
-  width: 100%;
-  //height: 100%;
-  font-size: 16px;
-  padding: 39px 39px 32px 20px;
-  position: absolute;
-  top: 61px;
-  left: 0;
-  z-index: 100;
-  background-color: #FFFFFF;
-  //height: calc(100vh - 160px);
+  display: none;
 
-  .nav__mobile__inner {
+  @media (max-width: $mobile) {
+    display: block;
     width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    //position: relative;
+    //height: 100%;
+    font-size: 16px;
+    padding: 39px 39px 32px 20px;
+    position: absolute;
+    top: 61px;
+    left: 0;
+    z-index: 100;
+    background-color: #FFFFFF;
+    //height: calc(100vh - 160px);
 
-    .account {
+    .nav__mobile__inner {
       width: 100%;
-      height: 64px;
-      display: flex;
-
-      .ava {
-        height: 64px;
-        width: 64px;
-        border-radius: 50%;
-        overflow: hidden;
-
-        img {
-          height: 100%;
-          width: 100%;
-          object-fit: cover;
-          object-position: center;
-        }
-      }
-
-      .information {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 12px;
-
-        span {
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 24px;
-          color: #000000;
-        }
-
-        .information__data {
-          display: flex;
-
-          .balance {
-            display: flex;
-            align-items: center;
-            margin-top: 4px;
-
-            span {
-              font-weight: 600;
-              font-size: 14px;
-              line-height: 20px;
-              color: #000000;
-              margin-left: 8px;
-            }
-          }
-
-          .geo {
-            display: flex;
-            align-items: center;
-            margin-top: 4px;
-            margin-left: 15px;
-
-            span {
-              margin-left: 8px;
-              font-weight: 500;
-              font-size: 16px;
-              line-height: 24px;
-              color: rgba(0, 11, 38, 0.8);
-            }
-          }
-        }
-      }
-    }
-
-    .nav {
-      width: 100%;
+      height: 100%;
       display: flex;
       flex-direction: column;
-      margin-top: 48px;
+      //position: relative;
 
-      a {
-        margin-bottom: 32px;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 24px;
-        color: rgba(0, 11, 38, 0.88);
-        text-decoration: none;
+      .account {
+        width: 100%;
+        height: 64px;
+        display: flex;
 
-        &:last-child {
-          margin: 0;
+        .ava {
+          height: 64px;
+          width: 64px;
+          border-radius: 50%;
+          overflow: hidden;
+
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+
+        .information {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-left: 12px;
+
+          span {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+          }
+
+          .information__data {
+            display: flex;
+
+            .balance {
+              display: flex;
+              align-items: center;
+              margin-top: 4px;
+
+              span {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                color: #000000;
+                margin-left: 8px;
+              }
+            }
+
+            .geo {
+              display: flex;
+              align-items: center;
+              margin-top: 4px;
+              margin-left: 15px;
+
+              span {
+                margin-left: 8px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: rgba(0, 11, 38, 0.8);
+              }
+            }
+          }
+        }
+      }
+
+      .nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 48px;
+
+        a {
+          margin-bottom: 32px;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 24px;
+          color: rgba(0, 11, 38, 0.88);
+          text-decoration: none;
+
+          &:last-child {
+            margin: 0;
+          }
         }
       }
     }

@@ -9,6 +9,7 @@ import NavMobile from "./components/header/NavMobile";
 import {Route, Routes} from "react-router-dom";
 import LogIn from "./components/authorization/LogIn";
 import EcoMarket from "./components/pages/ecomarket/EcoMarket";
+import CollectionPoints from "./components/pages/collection_points/CollectionPoints";
 
 const App = (props) => {
   return (
@@ -27,6 +28,7 @@ const App = (props) => {
             <Route path="/account/*"
                    element={<Lk state={props.state.lkPage}/>}/>
             <Route path={"/eco_market"} element={<EcoMarket/>}/>
+            <Route path={"/collection_points"} element={<CollectionPoints/>}/>
           </Routes>
         </div>
       </div>

@@ -1,0 +1,12 @@
+.collection__points {
+
+  iframe {
+    width: 100%;
+    height: calc(100vh - 60px);
+    position: absolute;
+    overflow: hidden;
+    z-index: 1000;
+    top: 60px;
+    border: none;
+  }
+}
