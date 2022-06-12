@@ -6,7 +6,7 @@ const Stories = (props) => {
 
   let storiesElements = props.stories
     .map((history) =>
-      <History id={history.id} adress={history.address} material={history.material} date={history.date}
+      <History id={history.id} address={history.address} material={history.material} date={history.date}
                price={history.price} icons={props.icons}/>);
 
   return (
