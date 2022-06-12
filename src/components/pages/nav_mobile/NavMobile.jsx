@@ -15,11 +15,11 @@ const NavMobile = (props) => {
             <span>{props.userData.name} {props.userData.surname}</span>
             <div className={style.information__data}>
               <div className={style.balance}>
-                <img src={props.state.coin}/>
+                <img src={props.icons.coin}/>
                 <span>{props.userData.balance}</span>
               </div>
               <div className={style.geo}>
-                <img src={props.state.geo}/>
+                <img src={props.icons.geo}/>
                 <span>{props.userData.city}</span>
               </div>
             </div>

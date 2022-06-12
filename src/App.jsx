@@ -22,7 +22,7 @@ const App = (props) => {
         <div className="body__main">
           <Routes>
             <Route path="/" element={<Main state={props.state.mainPage} icons={props.state.icons}/>}/>
-            <Route path="/nav_mobile/*" element={<NavMobile userData={props.state.userData} icons={props.state.icons}/>}/>
+            <Route path="/nav_mobile/" element={<NavMobile userData={props.state.userData} icons={props.state.icons}/>}/>
             <Route path="/account/*" element={<Lk state={props.state.lkPage} userData={props.state.userData} icons={props.state.icons}/>}/>
             <Route path={"/eco_market"} element={<EcoMarket state={props.state.ecomarketPage} icons={props.state.icons}/>}/>
             <Route path={"/collection_points"} element={<CollectionPoints icons={props.state.icons}/>}/>
