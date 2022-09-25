@@ -7,7 +7,7 @@ const NavMobile = (props) => {
     <div className={style.nav__mobile}>
       <div className={style.nav__mobile__inner}>
 
-        <div className={style.account}>
+        <NavLink to={"/account"} className={style.account}>
           <div className={style.ava}>
             <img src={props.userData.ava}/>
           </div>
@@ -24,7 +24,7 @@ const NavMobile = (props) => {
               </div>
             </div>
           </div>
-        </div>
+        </NavLink>
 
         <div className={style.nav}>
           <NavLink to={"/"}>Главная</NavLink>
