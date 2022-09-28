@@ -60,8 +60,8 @@
   margin-right: 0;
 }
 .main .main__inner .information .categories a:hover {
-  color: #000b26;
-  border-bottom: 3px solid #07c88e;
+  color: rgb(0, 11, 38);
+  border-bottom: 3px solid rgb(7, 200, 142);
   margin-bottom: -3px;
 }
 .main .main__inner .promocodies {

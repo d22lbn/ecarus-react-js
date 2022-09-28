@@ -51,7 +51,7 @@
   transition: all 0.1s ease;
 }
 .profile button:hover {
-  background-color: #07c88e;
+  background-color: rgb(7, 200, 142);
 }
 
 /*# sourceMappingURL=Profile.module.css.map */

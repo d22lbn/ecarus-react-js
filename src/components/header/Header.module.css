@@ -58,8 +58,8 @@
   margin-right: 0;
 }
 .header .header__inner .header__nav a.active__link {
-  color: #000b26;
-  border-bottom: 3px solid #07c88e;
+  color: rgb(0, 11, 38);
+  border-bottom: 3px solid rgb(7, 200, 142);
   padding-top: 3px;
 }
 .header .header__inner .header__configuration {
@@ -93,7 +93,7 @@
   }
 }
 .header .header__inner .header__configuration .balance {
-  color: #000b26;
+  color: rgb(0, 11, 38);
   font-weight: 600;
 }
 @media (max-width: 450px) {
